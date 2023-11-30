@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#gameArea {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+#gameButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
