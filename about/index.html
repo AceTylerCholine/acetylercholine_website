@@ -27,21 +27,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <head>        
             <link rel="canonical" href="https://www.acetylercholine.com/about"/>
-        
             <meta property="og:title" content="Tyler Short: Lover of Neuroscience"/>
-        
             <meta property="og:url" content="https://www.acetylercholine.com/about"/>
-        
             <meta property="og:site_name" content="AceTylercholine"/>
-        
             <meta property="og:type" content="website"/>
-
 			<meta name="keywords" content="Tyler Short, Neuroscience, Student"/>
-        
 			<meta property="og:image" content="https://www.acetylercholine.com/images/logo.png"/>
-			            
 			<meta property="og:description" content="Tyler Short's CV and contact info">
-			
 			<meta name="description" content="Tyler Short: Lover of Neuroscience">
 	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -162,19 +154,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <br>
 </footer>
 
-	<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('https://api.github.com/repos/AceTylerCholine/acetylercholine_website/about/commits')
-                .then(response => response.json())
-                .then(commits => {
-                    var lastCommitDate = new Date(commits[0].commit.committer.date);
-                    var options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
-                    var formattedDate = lastCommitDate.toLocaleDateString('en-US', options);
-                    document.getElementById('last-updated').innerText += " " + formattedDate;
-                })
-                .catch(error => console.log('Error:', error));
-        });
-    </script>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		fetch('https://api.github.com/repos/AceTylerCholine/acetylercholine_website/commits?path=acetylercholine_website/about')
+			.then(response => response.json())
+			.then(commits => {
+				var lastCommitDate = new Date(commits[0].commit.committer.date);
+				var options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
+				var formattedDate = lastCommitDate.toLocaleDateString('en-US', options);
+				document.getElementById('last-updated').innerText += " " + formattedDate;
+			})
+			.catch(error => console.log('Error:', error));
+	});
+</script>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
