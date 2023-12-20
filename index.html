@@ -236,7 +236,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <a href="https://www.linkedin.com/in/acetylercholine" target="_blank"><i class="fa fa-linkedin w3-hover-opacity fa-2x"></i></a>
   <a href="https://github.com/AceTylerCholine/homebrew" target="_blank"><i class="fa fa-github w3-hover-opacity fa-2x"></i></a>
   <p>Thanks for the help, <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <p id="last-updated">Last Updated: </p>
+  <i><p id="last-updated">Last Updated: </p></i>
   <br>
 </footer>
 
@@ -246,7 +246,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                 .then(response => response.json())
                 .then(commits => {
                     var lastCommitDate = new Date(commits[0].commit.committer.date);
-                    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    var options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
                     var formattedDate = lastCommitDate.toLocaleDateString('en-US', options);
                     document.getElementById('last-updated').innerText += " " + formattedDate;
                 })
