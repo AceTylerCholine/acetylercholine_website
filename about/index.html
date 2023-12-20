@@ -158,6 +158,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <a href="https://www.linkedin.com/in/acetylercholine" target="_blank"><i class="fa fa-linkedin w3-hover-opacity fa-2x"></i></a>
   <a href="https://github.com/AceTylerCholine/homebrew" target="_blank"><i class="fa fa-github w3-hover-opacity fa-2x"></i></a>
   <p>Thanks for the help, <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></footer>
+  <i><p id="last-updated">Last Updated: </p></i>
+  <br>
+</footer>
+
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://api.github.com/repos/AceTylerCholine/acetylercholine_website/about/commits')
+                .then(response => response.json())
+                .then(commits => {
+                    var lastCommitDate = new Date(commits[0].commit.committer.date);
+                    var options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
+                    var formattedDate = lastCommitDate.toLocaleDateString('en-US', options);
+                    document.getElementById('last-updated').innerText += " " + formattedDate;
+                })
+                .catch(error => console.log('Error:', error));
+        });
+    </script>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
