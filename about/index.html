@@ -156,7 +156,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
-		fetch('https://api.github.com/repos/AceTylerCholine/acetylercholine_website/commits?path=acetylercholine_website/about')
+		fetch('https://api.github.com/repos/AceTylerCholine/acetylercholine_website/commits')
 			.then(response => response.json())
 			.then(commits => {
 				var lastCommitDate = new Date(commits[0].commit.committer.date);
