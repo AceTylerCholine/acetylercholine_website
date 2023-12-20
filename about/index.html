@@ -19,8 +19,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     background: #2f4357;
     margin-top: 20px;
 }
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 .carousel-item {
-    text-align: center;
     height: 400px; /* Fixed height for carousel items */
     display: flex;
     justify-content: center;
@@ -30,6 +34,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     max-width: 100%; /* Limit image width to not exceed the container */
     max-height: 100%; /* Limit image height to not exceed the container */
     object-fit: contain; /* Ensures the entire image is visible */
+    margin: auto; /* Centers the image in the available space */
 }
 </style>
 
