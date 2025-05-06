@@ -44,22 +44,19 @@
         .indent {text-indent: 30px;}
         .profile-name-overlay {background-color: rgba(0, 0, 0, 0.7); color: white; padding: 5px 10px; border-radius: 3px;}
         /* Style for list items within work/education sections */
-        .experience-list { list-style-type: disc; margin-left: 20px; padding-left: 0; /* Reset default padding */ }
-        .experience-list li { margin-bottom: 8px; } /* Increased spacing slightly */
-        /* Ensure links within lists are clearly identifiable */
-        .experience-list li a { color: #0066cc; text-decoration: underline; }
-        .experience-list li a:hover { color: #004c99; }
+        .experience-list { list-style-type: disc; margin-left: 20px; padding-left: 0; }
+        .experience-list li { margin-bottom: 8px; }
+        /* Removed custom link styling for .experience-list li a */
 
-        /* Adding some more specific styling for better readability and professionalism */
+        /* General styling improvements - keeping these as they don't override default link colors in main content */
         .w3-card-4 { box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19); }
-        .w3-text-teal { color: #009688 !important; } /* Ensure W3.CSS teal is consistent */
+        .w3-text-teal { color: #009688 !important; }
         .w3-tag.w3-teal.w3-round { background-color: #009688 !important; }
         hr { border-top: 1px solid #ccc; margin: 20px 0; }
         /* Footer styling */
-        footer.w3-teal { background-color: #00796b !important; } /* Slightly darker teal for footer */
-        footer a { color: #e0f2f1; } /* Lighter link color for contrast on dark teal */
-        footer a:hover { color: #ffffff; }
-        footer .fa-brands { margin: 0 8px; } /* Spacing for social icons */
+        footer.w3-teal { background-color: #00796b !important; }
+        /* Removed custom link styling for footer a */
+        footer .fa-brands { margin: 0 8px; }
     </style>
 </head>
 
@@ -77,7 +74,9 @@
             </div>
     </div>
 
-    <div class="w3-content w3-margin-top" style="max-width:1400px; padding-top: 60px;"> <div class="w3-row-padding">
+    <div class="w3-content w3-margin-top" style="max-width:1400px; padding-top: 60px;">
+
+        <div class="w3-row-padding">
 
             <div class="w3-third">
                 <div class="w3-white w3-text-grey w3-card-4">
@@ -94,17 +93,17 @@
                         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+49 171 5418601</p>
                         <hr>
 
-                        <p class="w3-large"><b><i class="fa fa-file-alt fa-fw w3-margin-right w3-large w3-text-teal"></i>CV</b></p>
+                        <p class="w3-large"><b><i class="fa fa-file fa-fw w3-margin-right w3-large w3-text-teal"></i>CV</b></p>
                         <p><a href="Short, Christopher - CV.pdf" target="_blank" rel="noopener noreferrer">Short, Christopher - CV.pdf</a></p>
                         <hr>
 
-                        <p class="w3-large"><b><i class="fa fa-award fa-fw w3-margin-right w3-large w3-text-teal"></i>Accolades</b></p>
+                        <p class="w3-large"><b><i class="fa fa-bullhorn fa-fw w3-margin-right w3-large w3-text-teal"></i>Accolades</b></p>
                         <p><b>President</b>, Neuroscience Student Association, <i>2020-2021, UT Dallas</i></p>
                         <p><b>Vice President</b>, Neuroscience Student Association, <i>2019-2020, UT Dallas</i></p>
                         <p><b>Student Leader of the Year Nominee</b>, School of Behavioral and Brain Sciences, <i>2020, UT Dallas</i></p>
                         <hr>
 
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-hands-helping fa-fw w3-margin-right w3-large w3-text-teal"></i>Additional Activities</b></p>
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-teal"></i>Additional Activities</b></p>
                         <ul class="experience-list">
                             <li>&gt;100 Animals Fostered</li>
                             <li>70+ Blood Donations</li>
@@ -112,7 +111,7 @@
                         </ul>
                         <hr>
 
-                        <p class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Certifications</b></p>
+                        <p class="w3-large"><b><i class="fa fa-rocket fa-fw w3-margin-right w3-text-teal"></i>Certifications</b></p>
                         <ul class="experience-list">
                             <li><a href="https://freecodecamp.org/certification/AceTylercholine/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer"><b>Scientific Computing with Python</b></a>, <i>freeCodeCamp</i></li>
                             <li><a href="https://matlabacademy.mathworks.com/progress/share/learningpath/certificate.html?id=86807fa5-5b3e-489d-9982-fd4b4423aa52" target="_blank" rel="noopener noreferrer"><b>MATLAB for the MathWorks Certified MATLAB Associate Exam</b></a>, <i>MathWorks</i></li>
@@ -132,7 +131,7 @@
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b><a href="https://www.ggnb.gwdg.de/people/profile/index.php?ID=30377" target="_blank" rel="noopener noreferrer">PhD Student</a></b>, <i><a href="https://www.dpz.eu/en/social-neurobiology-lab" target="_blank" rel="noopener noreferrer">Social Neurobiology Lab</a>, <a href="https://www.dpz.eu/en/home.html" target="_blank" rel="noopener noreferrer">German Primate Center</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2024 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2024 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
                         <ul class="experience-list">
                             <li>PhD Thesis: Role of the Pulvinar-Dorsomedial Prefrontal Cortex Pathway in Adaptive Social Valuation in Marmosets</li>
                             <li>Master's Thesis Equivalent: Neuronal Basis for Conformity and Individual Bias in a Prefrontal Circuit <i>(Completed March 2025)</i></li>
@@ -141,7 +140,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Research Associate</b>, <i><a href="https://www.padillacoreanolab.com/" target="_blank" rel="noopener noreferrer">Padilla-Coreano Lab, University of Florida</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Jan 2024 - Jul 2024</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Jul 2024</h6>
                         <ul class="experience-list">
                             <li>Piloted a mouse cooperation choice task</li>
                             <li>Characterized prefrontal dynamics during reward competition from mouse electrophysiological data</li>
@@ -150,7 +149,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Research Assistant</b>, <i><a href="https://labs.utdallas.edu/filbeylab/" target="_blank" rel="noopener noreferrer"><b>N</b>euro<b>i</b>maging of <b>R</b>eward <b>D</b>ynamics (NiRD) Lab, UT Dallas</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Nov 2021 - Dec 2023</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - Dec 2023</h6>
                         <ul class="experience-list">
                             <li>Project Lead for study examining effects of taVNS on executive function</li>
                             <li>Project Lead for study examining effects of recreational vs medicinal cannabis use</li>
@@ -159,7 +158,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Clinical Pharmacy Technician</b>, <i><a href="https://medicalcityhealthcare.com/locations/medical-city-las-colinas/" target="_blank" rel="noopener noreferrer">Medical City Las Colinas</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Jun 2018 - Dec 2023</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Dec 2023</h6>
                         <ul class="experience-list">
                             <li>Prepared clinically sterile IV compounds and medications</li>
                         </ul>
@@ -167,7 +166,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Grant Intern & Wholesale Consultant</b>, <i><a href="https://tedsbrainscience.com/" target="_blank" rel="noopener noreferrer">Ted’s Brain Science</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Jun 2018 - Dec 2019</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Dec 2019</h6>
                         <ul class="experience-list">
                             <li>Organized, collaborated on, and oversaw the submission of a DoD CDMRP grant application</li>
                             <li>Communicated research and product to pharmacists, physicians, and retailers to establish and maintain wholesale relationships</li>
@@ -176,7 +175,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Volunteer Research Assistant / Work Study</b>, <i><a href="https://bbs.utdallas.edu/painneurosciencelab/" target="_blank" rel="noopener noreferrer">PAIN Neurobiology Research Group, UT Dallas</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Oct 2018 - Dec 2019</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - Dec 2019</h6>
                         <ul class="experience-list">
                             <li>Applied a mouse migraine model</li>
                             <li>Surgically obtained and cultured trigeminal neurons for electrophysiology</li>
@@ -185,7 +184,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Volunteer Research Assistant</b>, <i><a href="https://txbdc.utdallas.edu/" target="_blank" rel="noopener noreferrer">Texas Biomedical Device Center, UT Dallas</a></i></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Jun 2018 - Jul 2019</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Jul 2019</h6>
                         <ul class="experience-list">
                             <li>Handled rats and data collection from habituation to training pre- and post-stroke & VNS implantation</li>
                             <li>Observed multiple surgeries, auditory mappings, motor mappings, and profusions</li>
@@ -199,13 +198,13 @@
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Doctor of Philosophy in Systems Neuroscience</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">Current</span></h6>
                         <p>Georg-August-Universität Göttingen</p>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Master of Science in Applied Cognition & Neuroscience</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>2023</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023</h6>
                         <p>The University of Texas at Dallas</p>
                         <ul class="experience-list">
                             <li>TA for NSC 4356 Neurophysiology, <a href="https://profiles.utdallas.edu/rukhsana.sultana" target="_blank" rel="noopener noreferrer">Dr. Rukhsana Sultana</a> (Fall 2022)</li>
@@ -214,7 +213,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Bachelor of Science in Neuroscience</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>2021</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021</h6>
                         <p>The University of Texas at Dallas</p>
                         <ul class="experience-list">
                             <li>TA for PSY 2317 Statistics for Psychology, <a href="https://utdmercury.com/professor-offers-free-pantry-in-office-to-combat-food-insecurity/" target="_blank" rel="noopener noreferrer">Dr. Gayle Schwark</a> (Spring 2019, partial semester)</li>
@@ -223,7 +222,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Associate of Science in Applied Science</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>2017</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
                         <p>Dallas County Community College</p>
                     </div>
                     <br>
